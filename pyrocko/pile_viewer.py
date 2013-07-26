@@ -757,6 +757,7 @@ def MakePileViewerMainClass(base):
                 ('Short', 6000),
                 ('Medium', 20000),
                 ('Long', 60000),
+                ('Very Long', 120000),
             ]
             
             self.menuitems_visible_length = add_radiobuttongroup(self.visible_length_menu, menudef, self, self.visible_length_change)
