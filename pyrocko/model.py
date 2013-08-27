@@ -408,7 +408,8 @@ def load_stations(filename):
     station = None
     for line in f:
         toks = line.split(None, 5)
-        if len(toks)[0][0] == '#': continue
+        if len(toks)==0: continue
+        if toks[0][0] == '#': continue
         if len(toks) == 5 or len(toks) == 6:
             
             net, sta, loc = toks[0].split('.')
